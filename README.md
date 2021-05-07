@@ -3,7 +3,7 @@ Challenge at binarysearch.com. Tags: Graphs.
 
 Here the presented solutions to the challenge at binarysearch.com are two.
 
-1. The first one is in file "Solution_differentShapes_whereRotationAndFlippingMatter.java". As the name suggest, here as unique are regarded any figures that have different shapes, or have the same shape but differ in their rotation and/or are flipped on opposite side. And figres with exactly the same shapes, sizes and flippings are also regarded as different, is their differ in size.
+1 The first one is in file "Solution_differentShapes_whereRotationAndFlippingMatter.java". As the name suggest, here as unique are regarded any figures that have different shapes, or have the same shape but differ in their rotation and/or are flipped on opposite side. And figres with exactly the same shapes, sizes and flippings are also regarded as different, is their differ in size.
 
 Examples:
 different rotation:         figure one               figure two
