@@ -7,13 +7,13 @@ Here the presented solutions to the challenge at binarysearch.com are two.
 
 Examples:
 
-different rotation:                figure one               figure two
+different rotation:                       figure one               figure two
 
                                  1 1 1                      0 0 1
                                  
                                  1 0 0                      1 1 1
 
-flipped on opposite sides:         figure one               figure two
+flipped on opposite sides:                 figure one               figure two
 
                                   1 1                       1 1
                                   
@@ -21,7 +21,7 @@ flipped on opposite sides:         figure one               figure two
                                   
                                   0 1                       1 0
 
-different size:                    figure one               figure two
+different size:                            figure one               figure two
 
                                    1 1                    1 1 1 1
                                    
@@ -48,7 +48,7 @@ i.e. leftmost, rightmost, top, bottom. On the bases of these extracted points, w
 
 The matrices that contain the shapes, are the smallest possible rectangular matrices that  can contain the shape. Thus, they may consist both of '1's and '0's, and in such cases, we have to find a match for all '1's and '0's in order to declare the shapes as the same - if the shapes are the same, as per the definition for the second version of the solution, the amount/position of '0's, contained in the smallest possible rectangular matrix, will be exactly the same. This does not burden much the algorithm in terms of space and time, but makes a lot more easy to handle the rotations and flippings. And it makes the code easier to read.
 
-Examples:           shape         extracted matrix
+Examples:                                shape         extracted matrix
 
                      1 1 1            0 1 1 1
                      
