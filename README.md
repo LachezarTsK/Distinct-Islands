@@ -7,7 +7,7 @@ Here the presented solutions to the challenge at binarysearch.com are two.
 
 Examples:
 
-different rotation:                       figure one               figure two
+different rotation                      figure one               figure two
 
                                  1 1 1                      0 0 1
                                  
