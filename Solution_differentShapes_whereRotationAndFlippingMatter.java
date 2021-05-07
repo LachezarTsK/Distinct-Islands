@@ -1,5 +1,3 @@
-package distinctIslands.two;
-
 import java.util.Set;
 import java.util.HashSet;
 
@@ -37,25 +35,28 @@ public class Solution_differentShapes_whereRotationAndFlippingMatter {
     }
     return numberOfDifferentShapes.size();
   }
-
+  /*
+  Depth First Search: calculate a hash code for different shapes.
+  @return A long integer, representing the hash code.
+  */
   public long dfs_calculateHashShape(int r, int c) {
     visited[r][c] = true;
     long hash = 1;
 
     if (r - 1 >= 0 && matrix[r - 1][c] == 1 && !visited[r - 1][c]) {
-      hash = hash + 5 * dfs_calculateHashShape(r - 1, c);
+      hash += 5 * dfs_calculateHashShape(r - 1, c);
     }
 
     if (r + 1 < matrix.length && matrix[r + 1][c] == 1 && !visited[r + 1][c]) {
-      hash = hash - 7 * dfs_calculateHashShape(r + 1, c);
+      hash += 7 * dfs_calculateHashShape(r + 1, c);
     }
 
     if (c - 1 >= 0 && matrix[r][c - 1] == 1 && !visited[r][c - 1]) {
-      hash = hash + 11 * dfs_calculateHashShape(r, c - 1);
+      hash += 11 * dfs_calculateHashShape(r, c - 1);
     }
 
     if (c + 1 < matrix[r].length && matrix[r][c + 1] == 1 && !visited[r][c + 1]) {
-      hash = hash - 13 * dfs_calculateHashShape(r, c + 1);
+      hash += - 13 * dfs_calculateHashShape(r, c + 1);
     }
     return hash;
   }
