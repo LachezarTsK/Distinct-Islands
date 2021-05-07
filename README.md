@@ -1,2 +1,2 @@
 # Distinct-Islands
-Challenge at binarysearch.com.\n Tags: Graphs.
+Challenge at binarysearch.com. Tags: Graphs.
