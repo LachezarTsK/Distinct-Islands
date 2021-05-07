@@ -11,7 +11,7 @@ different rotation:         figure one               figure two
                           1 0 0                      1 1 1
 
 flipped on opposite sides:         figure one               figure two
-                                  1 1                       1 1
+                                \n  1 1                       1 1
                                   1 1                       1 1
                                   0 1                       1 0
 
