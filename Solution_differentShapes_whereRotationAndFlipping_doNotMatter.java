@@ -16,8 +16,9 @@ public class Solution_differentShapes_whereRotationAndFlipping_doNotMatter {
       {1, 1, 0, 1, 1},
       {1, 1, 0, 1, 1}
     };
-
-    System.out.println("result for matrix_one: " + sol.solve(matrix_one) + " different shapes");
+    int distinct = sol.solve(matrix_one);
+    String display = distinct == 1 ? distinct + " distinct shape." : distinct + " distinct shapes.";
+    System.out.println("result for matrix_one: " + display);
     System.out.println("matrix_one: ");
     sol.print();
     System.out.println("==================");
@@ -32,7 +33,9 @@ public class Solution_differentShapes_whereRotationAndFlipping_doNotMatter {
       {1, 1, 0, 1, 0}
     };
 
-    System.out.println("result for matrix_two: " + sol.solve(matrix_two) + " different shapes");
+    distinct = sol.solve(matrix_two);
+    display = distinct == 1 ? distinct + " distinct shape." : distinct + " distinct shapes.";
+    System.out.println("result for matrix_two: " + display);
     System.out.println("matrix_two: ");
     sol.print();
     System.out.println("==================");
@@ -42,7 +45,9 @@ public class Solution_differentShapes_whereRotationAndFlipping_doNotMatter {
       {1, 0, 1, 1}
     };
 
-    System.out.println("result for matrix_three: " + sol.solve(matrix_three) + " different shapes");
+    distinct = sol.solve(matrix_three);
+    display = distinct == 1 ? distinct + " distinct shape." : distinct + " distinct shapes.";
+    System.out.println("result for matrix_three: " + display);
     System.out.println("matrix_three: ");
     sol.print();
     System.out.println("==================");
@@ -53,7 +58,22 @@ public class Solution_differentShapes_whereRotationAndFlipping_doNotMatter {
       {0, 1, 0, 1, 0}
     };
 
-    System.out.println("result for matrix_four: " + sol.solve(matrix_four) + " different shapes");
+    distinct = sol.solve(matrix_four);
+    display = distinct == 1 ? distinct + " distinct shape." : distinct + " distinct shapes.";
+    System.out.println("result for matrix_four: " + display);
+    System.out.println("matrix_four: ");
+    sol.print();
+    System.out.println("==================");
+
+    int[][] matrix_five = {
+      {0, 0, 0, 0, 0},
+      {0, 0, 0, 0, 0},
+      {0, 0, 0, 0, 0}
+    };
+
+    distinct = sol.solve(matrix_five);
+    display = distinct == 1 ? distinct + " distinct shape." : distinct + " distinct shapes.";
+    System.out.println("result for matrix_four: " + display);
     System.out.println("matrix_four: ");
     sol.print();
     System.out.println("==================");
