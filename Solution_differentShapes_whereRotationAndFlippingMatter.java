@@ -48,7 +48,7 @@ public class Solution_differentShapes_whereRotationAndFlippingMatter {
     }
 
     if (r + 1 < matrix.length && matrix[r + 1][c] == 1 && !visited[r + 1][c]) {
-      hash += 7 * dfs_calculateHashShape(r + 1, c);
+      hash -= 7 * dfs_calculateHashShape(r + 1, c);
     }
 
     if (c - 1 >= 0 && matrix[r][c - 1] == 1 && !visited[r][c - 1]) {
@@ -56,7 +56,7 @@ public class Solution_differentShapes_whereRotationAndFlippingMatter {
     }
 
     if (c + 1 < matrix[r].length && matrix[r][c + 1] == 1 && !visited[r][c + 1]) {
-      hash += - 13 * dfs_calculateHashShape(r, c + 1);
+      hash -= 13 * dfs_calculateHashShape(r, c + 1);
     }
     return hash;
   }
