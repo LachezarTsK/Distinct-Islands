@@ -1,4 +1,3 @@
-package numberOfDistinctIslands;
 
 import java.util.HashSet;
 import java.util.Set;
